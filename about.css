@@ -1,4 +1,4 @@
-/*  Global Properties  */
+/* Global Properties */
 * { 
     font-family: 'Roboto', sans-serif; 
     scroll-behavior: smooth;
@@ -6,7 +6,7 @@
 
 h1, h2, h3, h4, h5 { font-family: 'Montserrat', sans-serif; }
 
-/*  Navigation Bar  */
+/* Navigation Bar */
 
 nav { border: 1px solid lightgrey; }
 nav li { position: relative; }
@@ -43,7 +43,7 @@ nav a:hover::after { width: 100%; }
     color: green;
 }
 
-/*  Footer  */
+/* Footer */
 
 #follow {
     color: white;
@@ -74,28 +74,30 @@ nav a:hover::after { width: 100%; }
 
 #footer-info { font-size: large; }
 
-/*  Features  */
+/* Main */
 
-#feature { width: 100%; }
-#description { font-size: larger; }
-
-@media (max-width: 810px) {
-    #title { font-size: x-large; }
-    #description { font-size: medium; }
+main {
+    height: 100vh;
+    background: url('./img/dark.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 
-@media (max-width: 770px) {
-    #carousel { display: none; }
+img { height: 12rem; }
+#description { font-size: large; }
+
+@media (max-width: 810px) {
+    #title, #about { font-size: x-large; }
+    #description { font-size: medium; }
+    img { height: 10rem; }
 }
 
 @media (max-width: 450px) {
+    #about { font-size: large; }
     #title { font-size: small; }
+    #name { font-size: x-large; }
     #description { font-size: smaller; }
-    #start-btn { 
-        font-size: small; 
-        height: 40px;
-        width: 150px;
-    }
+    img { height: 7rem; }
 
     #send-email {
         font-size: small; 
