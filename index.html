@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tracker</title>
+
+        <!-- Bootstrap CSS Dependency -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+        <!-- External CSS File -->
+        <link rel="stylesheet" text="text/css" href="./index.css">
+        <!-- Font Awesome Kit -->
+        <script src="https://kit.fontawesome.com/027317212e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-chart-area" id="logo"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-body mx-lg-2 font-weight-bold" href="./index.html">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link text-body mx-lg-2 font-weight-bold" href="#">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link text-body mr-lg-2 font-weight-bold" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <!-- Carousel -->
+                <div class="row">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/students.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Track Your Progress</h3>
+                                    <p>Know how well you have been doing so far</p>
+                                    <div class="my-2"><button id="start-btn">Get Started</button></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/studying.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>You Are On The Right Track</h3>
+                                    <p>Track your performance</p>
+                                    <div class="my-2"><button id="start-btn">Get Started</button></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/writing.webp" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Be Properly Organized</h3>
+                                    <p>Your task is organized so you won't be left behind and even forget</p>
+                                    <div class="my-2"><button id="start-btn">Get Started</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container-fluid bg-dark p-4">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <h4 class="text-white text-center">Contact Information</h4>
+                        <div class="d-flex justify-content-center my-4">
+                            <i class="fa fa-gitlab mx-3" id="follow"></i>
+                            <i class="fa fa-facebook mx-3" id="follow"></i>
+                            <i class="fa fa-github mx-3" id="follow"></i>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-center my-4">
+                                <i class="fa fa-phone" id="contact"></i>
+                                <span class="text-white ml-2">09608690365</span>
+                                <span class="text-white mx-3">|</span>
+                                <i class="fa fa-envelope" id="contact"></i>
+                                <span class="text-white ml-2">pauldxtr008@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email address here">
+                                <small id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</small>
+                                <div class="form-group my-2">
+                                    <textarea class="form-control" rows="3" placeholder="Messages"></textarea>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center"><button id="send-email">Send Email</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Boostrap JS Dependecies -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    </body>
+</html>
