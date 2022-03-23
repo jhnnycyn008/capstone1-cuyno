@@ -74,14 +74,28 @@ nav a:hover::after { width: 100%; }
 
 #footer-info { font-size: large; }
 
+#top { 
+    cursor: pointer;
+    color: white; 
+}
+
 /*  Features  */
 
 #feature { width: 100%; }
 #description { font-size: larger; }
+#about img { height: 12rem; }
+
+#about-me {
+    height: 100vh;
+    background: url('./img/dark.jpeg');
+    background-position: center;
+    background-size: cover;
+}
 
 @media (max-width: 810px) {
-    #title { font-size: x-large; }
+    #title, #about, #subtitle { font-size: x-large; }
     #description { font-size: medium; }
+    #about img { height: 10rem; }
 }
 
 @media (max-width: 770px) {
@@ -89,8 +103,10 @@ nav a:hover::after { width: 100%; }
 }
 
 @media (max-width: 450px) {
-    #title { font-size: small; }
+    #about { font-size: large; }
+    #title, #subtitle { font-size: large; }
     #description { font-size: smaller; }
+    #about img { height: 7rem; }
     #start-btn { 
         font-size: small; 
         height: 40px;
