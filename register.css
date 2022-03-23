@@ -1,0 +1,20 @@
+/*  Global Properties  */
+* { 
+    font-family: 'Roboto', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 { font-family: 'Montserrat', sans-serif; }
+
+/*  Form  */
+
+#form {
+    border: 1px solid lightgray;
+    height: fit-content;
+}
+
+@media (max-width: 450px) {
+    #form { border: 0; }
+    .container-fluid .form-control, .container-fluid button, #description { font-size: small; }
+    #site-name { font-size: xx-large; }
+}

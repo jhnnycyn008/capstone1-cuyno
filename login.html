@@ -14,8 +14,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&family=Roboto+Serif:wght@200&display=swap" rel="stylesheet"> 
         <!-- External CSS File -->
         <link rel="stylesheet" text="text/css" href="./login.css">
-        <!-- Font Awesome Kit
-        <script src="https://kit.fosntawesome.com/027317212e.js" crossorigin="anonymous"></script> -->
     </head>
     <body>
         <div class="container-fluid">
@@ -29,12 +27,21 @@
                 <div class="col-lg-4 col-md-8 col-12 p-4" id="form">
                     <form>
                         <div class="form-group"><input type="email" class="form-control" placeholder="Username" id="username" required autocomplete></div>
-                        <div class="form-group"><input type="email" class="form-control" placeholder="Password" id="password" required autocomplete></div>
+                        <div class="form-group"><input type="password" class="form-control" placeholder="Password" id="password" required autocomplete></div>
                         <button type="submit" class="btn btn-outline-primary btn-block" id="login">Log In</button>
-                        <divc class="d-flex justify-content-center mt-5"><button type="button" class="btn btn-outline-success" id="create-account">Create Account</button></div>
+                        <div class="d-flex justify-content-center mt-5"><button type="button" class="btn btn-outline-success" id="create-account" onclick="register()">Create Account</button></div>
                     </form>
                 </div>
             </div>
         </div>
+        <!-- Boostrap JS Dependecies -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <!-- Internal JS Script -->
+        <script>
+            register = () => {
+                location.replace('./register.html')
+            }
+        </script>
     </body>
 </html>
